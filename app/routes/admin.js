@@ -97,4 +97,12 @@ router.route('categorias/deletar').post(async(req,res)=>{
     })
 })
 
+router.route('postagens').get(async(req, res)=>{
+    res.render('/admin/postagens')
+})
+
+router.route('postagens/add').get(async(req, res)=>{
+    res.render('/admin/addpostagen')
+})
+
 module.exports = router
